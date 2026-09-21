@@ -9,8 +9,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <style>
+    .proj-scroll-wrap {
+      width: 100%;
+      border-radius: 24px;
+      overflow: hidden;
+      background: var(--c-mint);
+      position: relative;
+    }
+    .proj-scroll-wrap img {
+      width: 100%;
+      display: block;
+    }
+  </style>
 </head>
 <body>
+
 <nav class="nav">
   <div class="wrap">
     <span class="nav__logo">AG</span>
@@ -22,14 +36,19 @@
     </ul>
   </div>
 </nav>
+
 <main>
   <div class="wrap">
     <div class="proj-top">
       <h1 class="proj-title reveal">MergeDay</h1>
-      <p class="proj-desc reveal reveal--delay-1">Дизайн специального события MergeDay: механика слияния объектов, интерфейс комбинирования, ивентовый HUD.</p>
+      <p class="proj-desc reveal reveal--delay-1">Дизайн специального события MergeDay: механика слияния объектов, интерфейс комбинирования, попапы прогресса и ивентовый HUD.</p>
+
       <div class="proj-gallery">
-        <img src="../assets/images/thumb-mergeday.png" alt="MergeDay" class="proj-gallery__main reveal">
+        <div class="proj-scroll-wrap reveal">
+          <img src="../assets/images/page-mergeday.png" alt="MergeDay — полный разбор проекта" loading="lazy">
+        </div>
       </div>
+
       <nav class="proj-nav">
         <a href="podarok.html" class="proj-nav__link">&#8592; Предыдущий</a>
         <a href="../portfolio.html" class="proj-nav__link">Следующий &#8594;</a>
@@ -37,6 +56,7 @@
     </div>
   </div>
 </main>
+
 <footer class="footer">© 2026 Алина Груздева · UI/UX Designer</footer>
 <script src="../assets/js/main.js"></script>
 </body>

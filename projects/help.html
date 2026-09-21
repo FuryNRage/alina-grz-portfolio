@@ -9,8 +9,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <style>
+    .proj-scroll-wrap {
+      width: 100%;
+      border-radius: 24px;
+      overflow: hidden;
+      background: var(--c-mint);
+      position: relative;
+    }
+    .proj-scroll-wrap img {
+      width: 100%;
+      display: block;
+    }
+  </style>
 </head>
 <body>
+
 <nav class="nav">
   <div class="wrap">
     <span class="nav__logo">AG</span>
@@ -22,14 +36,19 @@
     </ul>
   </div>
 </nav>
+
 <main>
   <div class="wrap">
     <div class="proj-top">
       <h1 class="proj-title reveal">Хелп окна</h1>
-      <p class="proj-desc reveal reveal--delay-1">Разработка системы обучающих диалоговых окон: структура, иллюстрации, типографика и анимация появления.</p>
+      <p class="proj-desc reveal reveal--delay-1">Разработка системы обучающих диалоговых окон и хелп-подсказок для игровых механик: структура, иллюстрации, типографика и анимация появления.</p>
+
       <div class="proj-gallery">
-        <img src="../assets/images/thumb-help.png" alt="Хелп окна" class="proj-gallery__main reveal">
+        <div class="proj-scroll-wrap reveal">
+          <img src="../assets/images/page-help.png" alt="Хелп окна — полный разбор проекта" loading="lazy">
+        </div>
       </div>
+
       <nav class="proj-nav">
         <a href="ikonki.html" class="proj-nav__link">&#8592; Предыдущий</a>
         <a href="podzemelye.html" class="proj-nav__link">Следующий &#8594;</a>
@@ -37,6 +56,7 @@
     </div>
   </div>
 </main>
+
 <footer class="footer">© 2026 Алина Груздева · UI/UX Designer</footer>
 <script src="../assets/js/main.js"></script>
 </body>
