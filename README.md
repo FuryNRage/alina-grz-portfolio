@@ -1,2 +1,2 @@
 # alina-grz-portfolio
-Statis Portfolio Build
+Statiс Portfolio Build
