@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ивент — Alina Gruzdeva</title>
+  <title>Ивент — Алина Груздева</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
 </head>
 <body>
-
 <nav class="nav">
-  <div class="nav__inner">
+  <div class="wrap">
     <span class="nav__logo">AG</span>
     <ul class="nav__links">
       <li><a href="../index.html">Обо мне</a></li>
@@ -19,32 +22,22 @@
     </ul>
   </div>
 </nav>
-
 <main>
-  <div class="container">
-    <div class="project-hero">
-      <h1 class="project-hero__title">Ивент</h1>
-      <p class="project-hero__desc">Комплексный дизайн игрового ивента: лендинг события, иконки механики, экран прогресса, финальный экран наград и промо-баннеры.</p>
-
-      <div class="project-images">
-        <img src="../assets/images/thumb-event.png" alt="Ивент" class="project-images__main">
+  <div class="wrap">
+    <div class="proj-top">
+      <h1 class="proj-title reveal">Ивент</h1>
+      <p class="proj-desc reveal reveal--delay-1">Комплексный дизайн игрового ивента: лендинг события, иконки механики, экран прогресса, финальный экран наград.</p>
+      <div class="proj-gallery">
+        <img src="../assets/images/thumb-event.png" alt="Ивент" class="proj-gallery__main reveal">
       </div>
-
-      <nav class="project-nav">
-        <a href="zagruzka.html" class="project-nav__link">
-          <span class="project-nav__arrow">&#8592;</span> Предыдущий проект
-        </a>
-        <a href="podarok.html" class="project-nav__link">
-          Следующий проект <span class="project-nav__arrow">&#8594;</span>
-        </a>
+      <nav class="proj-nav">
+        <a href="zagruzka.html" class="proj-nav__link">&#8592; Предыдущий</a>
+        <a href="podarok.html" class="proj-nav__link">Следующий &#8594;</a>
       </nav>
     </div>
   </div>
 </main>
-
-<footer class="footer">
-  &copy; 2026 Алина Груздева &middot; UI/UX Designer
-</footer>
-
+<footer class="footer">© 2026 Алина Груздева · UI/UX Designer</footer>
+<script src="../assets/js/main.js"></script>
 </body>
 </html>

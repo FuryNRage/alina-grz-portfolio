@@ -3,13 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Монополия — Alina Gruzdeva</title>
+  <title>Монополия — Алина Груздева</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
 </head>
 <body>
 
 <nav class="nav">
-  <div class="nav__inner">
+  <div class="wrap">
     <span class="nav__logo">AG</span>
     <ul class="nav__links">
       <li><a href="../index.html">Обо мне</a></li>
@@ -21,38 +25,34 @@
 </nav>
 
 <main>
-  <div class="container">
-    <div class="project-hero">
-      <h1 class="project-hero__title">Монополия</h1>
-      <p class="project-hero__desc">
+  <div class="wrap">
+    <div class="proj-top">
+      <h1 class="proj-title reveal">Монополия</h1>
+      <p class="proj-desc reveal reveal--delay-1">
         Разработан полный комплект визуальных материалов и элементов UI для интерактивного ивента
         в стиле классической «Монополии». Отрисованы клетки для поля, плашки для магазина игрушек
         и кнопка.
       </p>
 
-      <div class="project-images">
-        <img src="../assets/images/proj-monopoly-main.png" alt="Монополия — общий вид" class="project-images__main">
-        <div class="project-images__row">
-          <img src="../assets/images/proj-monopoly-2.png" alt="Магазин">
-          <img src="../assets/images/proj-monopoly-3.png" alt="Хелп окно">
+      <div class="proj-gallery">
+        <img src="../assets/images/proj-monopoly-main.png"
+             alt="Монополия — общий вид"
+             class="proj-gallery__main reveal">
+        <div class="proj-gallery__row">
+          <img src="../assets/images/proj-monopoly-2.png" alt="Магазин"    class="reveal reveal--delay-1">
+          <img src="../assets/images/proj-monopoly-3.png" alt="Хелп окно"  class="reveal reveal--delay-2">
         </div>
       </div>
 
-      <nav class="project-nav">
-        <a href="nastroyki.html" class="project-nav__link">
-          <span class="project-nav__arrow">←</span> Предыдущий проект
-        </a>
-        <a href="soliter.html" class="project-nav__link">
-          Следующий проект <span class="project-nav__arrow">→</span>
-        </a>
+      <nav class="proj-nav">
+        <a href="nastroyki.html"  class="proj-nav__link">← Предыдущий</a>
+        <a href="soliter.html"    class="proj-nav__link">Следующий →</a>
       </nav>
     </div>
   </div>
 </main>
 
-<footer class="footer">
-  © 2026 Алина Груздева · UI/UX Designer
-</footer>
-
+<footer class="footer">© 2026 Алина Груздева · UI/UX Designer</footer>
+<script src="../assets/js/main.js"></script>
 </body>
 </html>

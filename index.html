@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alina Gruzdeva — UI/UX Designer</title>
+  <title>Алина Груздева — UI/UX Designer</title>
   <meta name="description" content="Алина Груздева — UX/UI дизайнер с 5-летним опытом в GameDev. Специализация на казуальных мобильных играх.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
 </head>
 <body>
 
-<!-- NAVIGATION -->
 <nav class="nav">
-  <div class="nav__inner">
+  <div class="wrap">
     <span class="nav__logo">AG</span>
     <ul class="nav__links">
       <li><a href="index.html" class="active">Обо мне</a></li>
@@ -23,160 +25,165 @@
   </div>
 </nav>
 
-<!-- HERO -->
+<!-- ── HERO ─────────────────────────────────────────────── -->
 <section class="hero">
-  <div class="hero__bg-ellipse"></div>
 
   <div class="hero__left">
-    <h1 class="hero__title">Ui/Ux<span>designer</span></h1>
+    <h1 class="hero__headline">
+      Ui/Ux<em>designer</em>
+    </h1>
     <p class="hero__greeting">Привет, меня зовут Алина!</p>
     <p class="hero__bio">
       Я UX/UI дизайнер с 5-летним опытом в GameDev и специализацией на казуальных мобильных играх.
-      Создаю понятные игровые интерфейсы, продумываю флоу и повышаю качество пользовательского
-      опыта через аналитику, визуальный язык и тщательную проработку деталей.
+      Создаю понятные игровые интерфейсы, продумываю флоу и повышаю качество пользовательского опыта
+      через аналитику, визуальный язык и тщательную проработку деталей.
     </p>
-    <a href="portfolio.html" class="download-btn" style="text-decoration:none;">Портфолио →</a>
+    <a href="portfolio.html" class="hero__cta">Смотреть работы →</a>
   </div>
 
   <div class="hero__right">
     <div class="hero__collage">
-      <img
-        src="assets/images/hero-main.jpg"
-        alt="Алина Груздева"
-        class="hero__collage-img hero__collage-img--main"
-        onerror="this.style.background='#e6f4f1';this.style.display='block'"
-      >
-      <img
-        src="assets/images/hero-side.jpg"
-        alt="Работа"
-        class="hero__collage-img hero__collage-img--side"
-        onerror="this.style.background='#c8e8e3';this.style.display='block'"
-      >
-      <div class="hero__star hero__star--1"></div>
-      <div class="hero__star hero__star--2"></div>
-      <div class="hero__star hero__star--3"></div>
+      <img src="assets/images/hero-main.png"
+           alt="Алина Груздева"
+           class="hero__photo hero__photo--a"
+           onerror="this.style.background='var(--c-mint)';this.removeAttribute('src')">
+      <img src="assets/images/hero-side.png"
+           alt="Работа"
+           class="hero__photo hero__photo--b"
+           onerror="this.style.background='var(--c-mint2)';this.removeAttribute('src')">
+      <div class="star star--lg star-1"></div>
+      <div class="star star--sm star-2">✦</div>
+      <div class="star star--lg star-3"></div>
+      <div class="star star--sm star-4">✦</div>
     </div>
   </div>
+
 </section>
 
-<!-- ABOUT -->
+<!-- ── ABOUT ─────────────────────────────────────────────── -->
 <section class="section" id="about">
-  <div class="container">
-    <div class="about__grid">
+  <div class="wrap">
+    <div class="about__cols">
+
       <div>
-        <h2 class="section__title">Обо&nbsp;мне</h2>
-        <p class="section__text">
-          Я UX/UI дизайнер с фокусом на разработку игровых интерфейсов, промо-акций и ивентов.
+        <h2 class="section__title reveal">Обо&nbsp;мне</h2>
+        <p class="section__lead reveal reveal--delay-1">
+          UI/UX дизайнер с фокусом на разработку игровых интерфейсов, промо-акций и ивентов.
           Проектирую пользовательские пути и создаю визуальный дизайн игровой графики, меню и HUD.
           Имею чётко выстроенный процесс подготовки макетов и сборки UI-ассетов для передачи в разработку,
           что сводит к минимуму ошибки при интеграции в движок.
         </p>
       </div>
+
       <div>
-        <h2 class="section__title">Навыки</h2>
-        <ul class="about__skills-list">
+        <h2 class="section__title reveal">Навыки</h2>
+        <ul class="skills-list reveal reveal--delay-1">
           <li>Создание и поддержание UI Kit, дизайн-систем</li>
-          <li>Уверенное владение Photoshop и Figma</li>
+          <li>Уверенное владение Figma и Photoshop</li>
           <li>Создание user flow и прототипов</li>
-          <li>Разработка и создание интерфейсов для игр</li>
-          <li>Отрисовка иконок, паттернов</li>
-          <li>Опыт взаимодействия с гейм-дизайнерами и разработчиками</li>
-          <li>Prototyping, Web design, Mobile app design</li>
-          <li>CJM (карта пути пользователя)</li>
-          <li>Информационная архитектура</li>
+          <li>Разработка интерфейсов для мобильных игр</li>
+          <li>Отрисовка иконок и паттернов</li>
+          <li>Опыт работы с гейм-дизайнерами и разработчиками</li>
+          <li>Prototyping, CJM, информационная архитектура</li>
+          <li>Английский язык B1/B2</li>
         </ul>
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- TOOLS -->
-<section class="section section--alt" id="tools">
-  <div class="container">
-    <h2 class="section__title">Инструменты</h2>
+<!-- ── TOOLS ─────────────────────────────────────────────── -->
+<section class="section section--mint" id="tools">
+  <div class="wrap">
+    <h2 class="section__title reveal">Инструменты</h2>
     <div class="tools__grid">
 
-      <div class="tool-card">
-        <svg viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:44px;height:44px">
-          <path d="M9.5 38C9.5 35.0826 10.6589 32.2847 12.7218 30.2218C14.7847 28.1589 17.5826 27 20.5 27C23.4174 27 26.2153 28.1589 28.2782 30.2218C30.3411 32.2847 31.5 35.0826 31.5 38C31.5 40.9174 30.3411 43.7153 28.2782 45.7782C26.2153 47.8411 23.4174 49 20.5 49C17.5826 49 14.7847 47.8411 12.7218 45.7782C10.6589 43.7153 9.5 40.9174 9.5 38Z" fill="#F24E1E"/>
-          <path d="M9.5 19V27H20.5V19C20.5 16.0826 19.3411 13.2847 17.2782 11.2218C15.2153 9.15893 12.4174 8 9.5 8C6.58261 8 3.78473 9.15893 1.72183 11.2218C-0.341066 13.2847 -1.5 16.0826 -1.5 19C-1.5 21.9174 -0.341066 24.7153 1.72183 26.7782C3.78473 28.8411 6.58261 30 9.5 30" fill="#FF7262"/>
-          <path d="M20.5 0V27H31.5C34.4174 27 37.2153 25.8411 39.2782 23.7782C41.3411 21.7153 42.5 18.9174 42.5 16C42.5 13.0826 41.3411 10.2847 39.2782 8.22183C37.2153 6.15893 34.4174 5 31.5 5" fill="#FF7262"/>
-          <path d="M9.5 0V27H20.5V0H9.5Z" fill="#A259FF"/>
-          <path d="M9.5 27H20.5V54H9.5V27Z" fill="#0ACF83"/>
-          <path d="M9.5 0C6.58261 0 3.78473 1.15893 1.72183 3.22183C-0.341066 5.28473 -1.5 8.08261 -1.5 11C-1.5 13.9174 -0.341066 16.7153 1.72183 18.7782C3.78473 20.8411 6.58261 22 9.5 22" fill="#1ABCFE"/>
+      <div class="tool reveal reveal--delay-1">
+        <svg viewBox="0 0 38 57" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.5 38c0-6.075 4.925-11 11-11s11 4.925 11 11-4.925 11-11 11-11-4.925-11-11z" fill="#F24E1E"/>
+          <path d="M-1.5 19c0-6.075 4.925-11 11-11H20.5v22H9.5c-6.075 0-11-4.925-11-11z" fill="#FF7262"/>
+          <path d="M20.5 0H31.5c6.075 0 11 4.925 11 11s-4.925 11-11 11H20.5V0z" fill="#FF7262"/>
+          <path d="M9.5 0H20.5v22H9.5C3.425 22-1.5 17.075-1.5 11S3.425 0 9.5 0z" fill="#A259FF"/>
+          <path d="M9.5 27H20.5V54H9.5C3.425 54-1.5 49.075-1.5 43s4.925-11 11-11z" fill="#0ACF83"/>
+          <path d="M20.5 0v22H31.5c6.075 0 11-4.925 11-11S37.575 0 31.5 0H20.5z" fill="#1ABCFE"/>
         </svg>
-        <span>Figma</span>
+        Figma
       </div>
 
-      <div class="tool-card">
-        <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:44px;height:44px;background:#001e36;border-radius:8px;padding:4px">
-          <text x="10" y="34" font-size="22" font-weight="900" fill="#31a8ff" font-family="Arial">Ps</text>
+      <div class="tool reveal reveal--delay-2" style="background:#001d3d">
+        <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+          <text x="6" y="36" font-size="26" font-weight="900" fill="#31a8ff" font-family="Arial,sans-serif">Ps</text>
         </svg>
-        <span>Photoshop</span>
+        <span style="color:#31a8ff">Photoshop</span>
       </div>
 
-      <div class="tool-card">
-        <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:44px;height:44px;background:#001e36;border-radius:8px;padding:4px">
-          <text x="8" y="34" font-size="22" font-weight="900" fill="#31a8ff" font-family="Arial">Lr</text>
+      <div class="tool reveal reveal--delay-3" style="background:#001d3d">
+        <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+          <text x="6" y="36" font-size="26" font-weight="900" fill="#31a8ff" font-family="Arial,sans-serif">Lr</text>
         </svg>
-        <span>Lightroom</span>
+        <span style="color:#31a8ff">Lightroom</span>
       </div>
 
-      <div class="tool-card">
-        <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:44px;height:44px;background:#330000;border-radius:8px;padding:4px">
-          <text x="8" y="34" font-size="22" font-weight="900" fill="#ff9a00" font-family="Arial">Ai</text>
+      <div class="tool reveal reveal--delay-4" style="background:#300">
+        <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+          <text x="6" y="36" font-size="26" font-weight="900" fill="#ff9a00" font-family="Arial,sans-serif">Ai</text>
         </svg>
-        <span>Illustrator</span>
+        <span style="color:#ff9a00">Illustrator</span>
       </div>
 
-      <div class="tool-card" style="background:#ffd700">
-        <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:44px;height:44px">
-          <text x="8" y="30" font-size="16" font-weight="900" fill="#1c1c1e" font-family="Arial">Tilda</text>
+      <div class="tool reveal reveal--delay-5" style="background:#fff7cf">
+        <svg viewBox="0 0 50 18" xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="15" font-size="16" font-weight="900" fill="#333" font-family="Arial,sans-serif">Tilda</text>
         </svg>
-        <span>Tilda</span>
+        <span style="color:#333">Tilda / Wix</span>
       </div>
 
-      <div class="tool-card" style="background:#fff8e5">
-        <svg viewBox="0 0 44 44" style="width:44px;height:44px">
-          <circle cx="22" cy="22" r="18" fill="#ffdd33"/>
-          <text x="8" y="27" font-size="12" font-weight="900" fill="#1c1c1e" font-family="Arial">Miro</text>
+      <div class="tool reveal reveal--delay-1" style="background:#fff8e5">
+        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="18" fill="#ffdd33"/>
+          <text x="8" y="25" font-size="13" font-weight="900" fill="#1c1c1e" font-family="Arial,sans-serif">Miro</text>
         </svg>
-        <span>Miro</span>
+        <span style="color:#333">Miro</span>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- CONTACTS -->
+<!-- ── CONTACTS ───────────────────────────────────────────── -->
 <section class="section" id="contacts">
-  <div class="container">
-    <h2 class="section__title">Контакты</h2>
+  <div class="wrap">
+    <h2 class="section__title reveal">Контакты</h2>
     <div class="contacts__row">
 
-      <a href="https://t.me/GruzdevaAlina" target="_blank" rel="noopener" class="contact-btn" title="Telegram">
+      <a href="https://t.me/GruzdevaAlina" target="_blank" rel="noopener"
+         class="contact-btn reveal reveal--delay-1" title="Telegram">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-2.032 9.573c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L6.512 14.586l-2.963-.924c-.643-.204-.657-.643.136-.953l11.57-4.463c.535-.194 1.004.13.307.002z"/>
+          <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.56 8.25-2.03 9.57c-.15.66-.54.82-1.09.51l-3-2.21-1.45 1.39c-.16.16-.3.3-.61.3l.21-3.05 5.56-5.02c.24-.21-.05-.33-.37-.12L6.51 14.59l-2.96-.92c-.64-.2-.66-.64.14-.95l11.57-4.46c.54-.2 1.01.13.3.01v-.02z"/>
         </svg>
       </a>
 
-      <a href="https://linkedin.com/in/alina-gruzdeva-3270b3209" target="_blank" rel="noopener" class="contact-btn" title="LinkedIn">
+      <a href="https://linkedin.com/in/alina-gruzdeva-3270b3209" target="_blank" rel="noopener"
+         class="contact-btn reveal reveal--delay-2" title="LinkedIn">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.22 0z"/>
         </svg>
       </a>
 
-      <a href="mailto:gruzdevaalina45@gmail.com" class="contact-btn" title="Gmail">
+      <a href="mailto:gruzdevaalina45@gmail.com"
+         class="contact-btn reveal reveal--delay-3" title="Gmail">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.907 1.528-1.148C21.69 2.28 24 3.434 24 5.457z"/>
+          <path d="M24 5.46v13.91c0 .9-.73 1.63-1.64 1.63h-3.82v-9.27l-6.54 4.91-6.54-4.91v9.27H1.64C.73 21 0 20.27 0 19.37V5.46c0-2.02 2.31-3.18 3.93-1.96L5.45 4.64 12 9.55l6.55-4.91 1.52-1.14C21.69 2.28 24 3.44 24 5.46z"/>
         </svg>
       </a>
 
     </div>
-    <p class="section__text" style="margin-top:24px;font-size:18px;">
-      <strong>gruzdevaalina45@gmail.com</strong><br>
-      <strong>+995 511 284 409</strong>
-    </p>
+
+    <div class="contacts__info reveal reveal--delay-2">
+      <a href="mailto:gruzdevaalina45@gmail.com">gruzdevaalina45@gmail.com</a><br>
+      <span>+995 511 284 409</span>
+    </div>
   </div>
 </section>
 
@@ -184,5 +191,6 @@
   © 2026 Алина Груздева · UI/UX Designer
 </footer>
 
+<script src="assets/js/main.js"></script>
 </body>
 </html>
