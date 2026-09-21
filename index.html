@@ -29,9 +29,12 @@
 <section class="hero">
 
   <div class="hero__left">
-    <h1 class="hero__headline">
-      Ui/Ux<em>designer</em>
-    </h1>
+    <!-- Animated heading — cycles through 3 font styles from Figma -->
+    <div class="hero__heading-wrap" aria-label="Ui/Ux designer">
+      <img src="assets/images/heading-1.png" alt="Ui/Ux designer" class="hero__heading-img active" id="himg0">
+      <img src="assets/images/heading-2.png" alt="Ui/Ux designer" class="hero__heading-img"         id="himg1">
+      <img src="assets/images/heading-3.png" alt="Ui/Ux designer" class="hero__heading-img"         id="himg2">
+    </div>
     <p class="hero__greeting">Привет, меня зовут Алина!</p>
     <p class="hero__bio">
       Я UX/UI дизайнер с 5-летним опытом в GameDev и специализацией на казуальных мобильных играх.
@@ -43,18 +46,11 @@
 
   <div class="hero__right">
     <div class="hero__collage">
-      <img src="assets/images/hero-main.png"
-           alt="Алина Груздева"
-           class="hero__photo hero__photo--a"
-           onerror="this.style.background='var(--c-mint)';this.removeAttribute('src')">
-      <img src="assets/images/hero-side.png"
-           alt="Работа"
-           class="hero__photo hero__photo--b"
-           onerror="this.style.background='var(--c-mint2)';this.removeAttribute('src')">
-      <div class="star star--lg star-1"></div>
-      <div class="star star--sm star-2">✦</div>
-      <div class="star star--lg star-3"></div>
-      <div class="star star--sm star-4">✦</div>
+      <img src="assets/images/hero-main.png" alt="Алина Груздева" class="hero__photo hero__photo--a" loading="eager">
+      <img src="assets/images/hero-side.png" alt="Работа"         class="hero__photo hero__photo--b" loading="eager">
+      <div class="star star-1">✦</div>
+      <div class="star star-2">✦</div>
+      <div class="star star-3">✦</div>
     </div>
   </div>
 
